@@ -10,5 +10,7 @@ keymap.set({'n', 'x'}, 'cv', '"+p')     -- Paste from clipboard.
 keymap.set({'n', 'x'}, 'x', '"_x')      -- Override 'x' to delete text without buffering
 keymap.set({'n', 'x'}, '<leader>w', '<C-w>')
 
-keymap.set('n', '<leader>ft', ':NERDTreeToggle<CR>')
-keymap.set('n', '<leader>ff', ':NERDTreeRefreshRoot<CR>:NERDTreeFocus<CR>')
+keymap.set('n', '<leader>ff', ':NvimTreeFocus<CR>')
+keymap.set('n', '<leader>ft', ':NvimTreeToggle<CR>')
+keymap.set('n', '<leader>fs', ':NvimTreeFindFile<CR>')
+keymap.set('n', '<leader>fc', ':NvimTreeCollapse<CR>')

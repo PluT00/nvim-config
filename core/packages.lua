@@ -32,13 +32,13 @@ require('packer').startup(function(use)
   use 'sbdchd/neoformat'
 
   -- GUI things
+  use 'nvim-tree/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
-  use 'preservim/nerdtree'
+  use 'nvim-tree/nvim-tree.lua'
   use 'folke/which-key.nvim'
   use {'kevinhwang91/nvim-bqf', ft = 'qf'}
 
   -- Git stuff
-  use 'Xuyuanp/nerdtree-git-plugin'
   use 'tpope/vim-fugitive'
   use "rbong/vim-flog"
   use "christoomey/vim-conflicted"
@@ -74,6 +74,7 @@ local packages_conf_files = {
   "indent-blankline.lua",
   "lspconfig.lua",
   "lualine.lua",
+  "nvim-tree.lua",
   "nvim-cmp.lua",
   "treesitter.lua",
   "vim-auto-save.lua",

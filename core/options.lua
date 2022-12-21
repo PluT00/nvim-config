@@ -1,5 +1,9 @@
 local opt = vim.opt
 
+-- Disable netrw ("strongly advised" by hlslens and nvim-tree.lua plugins)
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 -- General nvim settings.
 opt.mouse = 'a'
 opt.encoding = 'utf-8'

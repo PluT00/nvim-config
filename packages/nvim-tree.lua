@@ -4,9 +4,9 @@ require("nvim-tree").setup({
   open_on_setup_file = true,
 
   view = {
-    adaptive_size = true,
     number = true,
     relativenumber = true,
+    width = 30,
     mappings = {
       custom_only = false,
       list = {
@@ -18,9 +18,6 @@ require("nvim-tree").setup({
   },
   renderer = {
     group_empty = true,
-  },
-  filters = {
-    dotfiles = true,
   },
   tab = {
     sync = {

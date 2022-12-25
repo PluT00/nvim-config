@@ -32,6 +32,7 @@ require('packer').startup(function(use)
   use 'sbdchd/neoformat'
 
   -- GUI things
+  use 'akinsho/bufferline.nvim'
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
   use 'nvim-tree/nvim-tree.lua'
@@ -69,6 +70,7 @@ end
 
 -- Packages config files
 local packages_conf_files = {
+  "bufferline.lua",
   "colorscheme.lua",
   "hlslens.lua",
   "indent-blankline.lua",

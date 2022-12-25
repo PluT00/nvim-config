@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/Users/plut00/.local/share/nvim/site/pack/packer/start/better-escape.vim",
     url = "https://github.com/jdhao/better-escape.vim"
   },
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/Users/plut00/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/plut00/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -265,8 +270,8 @@ vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Filetype lazy-loads
 time([[Defining lazy-load filetype autocommands]], true)
-vim.cmd [[au FileType python ++once lua require("packer.load")({'vim-python-pep8-indent'}, { ft = "python" }, _G.packer_plugins)]]
 vim.cmd [[au FileType qf ++once lua require("packer.load")({'nvim-bqf'}, { ft = "qf" }, _G.packer_plugins)]]
+vim.cmd [[au FileType python ++once lua require("packer.load")({'vim-python-pep8-indent'}, { ft = "python" }, _G.packer_plugins)]]
 time([[Defining lazy-load filetype autocommands]], false)
 vim.cmd("augroup END")
 

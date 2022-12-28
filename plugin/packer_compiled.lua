@@ -156,6 +156,11 @@ _G.packer_plugins = {
     path = "/Users/plut00/.local/share/nvim/site/pack/packer/start/neoformat",
     url = "https://github.com/sbdchd/neoformat"
   },
+  ["nord.nvim"] = {
+    loaded = true,
+    path = "/Users/plut00/.local/share/nvim/site/pack/packer/start/nord.nvim",
+    url = "https://github.com/shaunsingh/nord.nvim"
+  },
   ["nvim-bqf"] = {
     loaded = false,
     needs_bufread = true,

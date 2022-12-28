@@ -7,6 +7,7 @@ require('packer').startup(function(use)
 
   -- Theme
   use 'sainnhe/gruvbox-material'
+  use 'shaunsingh/nord.nvim'
 
   -- LSP plugins
   use 'hrsh7th/nvim-cmp'

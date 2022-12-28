@@ -9,6 +9,7 @@ require("bufferline").setup{
                 text_align = "center",
                 separator = true
             }
-        }
+        },
+        separator_style = "slant"
     }
 }

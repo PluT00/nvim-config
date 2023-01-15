@@ -32,6 +32,8 @@ require('packer').startup(function(use)
   use 'tpope/vim-repeat'
   use 'sbdchd/neoformat'
 
+  use { "Vimjas/vim-python-pep8-indent", ft = { "python" } }
+
   -- GUI things
   use 'akinsho/bufferline.nvim'
   use 'nvim-tree/nvim-web-devicons'

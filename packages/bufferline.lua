@@ -1,5 +1,6 @@
 require("bufferline").setup{
     options = {
+        mode = "tabs",
         numbers = "ordinal",
         diagnostics = "nvim_lsp",
         offsets = {
@@ -10,6 +11,6 @@ require("bufferline").setup{
                 separator = true
             }
         },
-        separator_style = "slant"
+        -- separator_style = "slant"
     }
 }

@@ -1,10 +1,14 @@
 local keymap = vim.keymap
 local builtin = require('telescope.builtin')
 
--- Keybindings.
+-- Some options
 vim.g.mapleader = ','
-vim.g.better_escape_shortcut = {'jk', 'kj'}
+vim.g.better_escape_shortcut = {'jk', 'kj', 'ло', 'ол'}
 
+-- Russian language support in Normal mode
+vim.o.langmap = 'ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz'
+
+-- Keybindings
 keymap.set('', '<ScrollWheelUp>', '<C-y>')
 keymap.set('', '<ScrollWheelDown>', '<C-e>')
 

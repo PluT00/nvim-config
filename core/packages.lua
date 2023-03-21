@@ -32,15 +32,24 @@ require('packer').startup(function(use)
   use 'tpope/vim-repeat'
   use 'sbdchd/neoformat'
 
-  use { "Vimjas/vim-python-pep8-indent", ft = { "python" } }
-
   -- GUI things
   use 'akinsho/bufferline.nvim'
-  use 'nvim-tree/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
-  use 'nvim-tree/nvim-tree.lua'
   use 'folke/which-key.nvim'
   use {'kevinhwang91/nvim-bqf', ft = 'qf'}
+
+  use 'nvim-lua/plenary.nvim'
+  use 'nvim-telescope/telescope.nvim'
+  use { "nvim-telescope/telescope-symbols.nvim", after = "telescope.nvim" }
+  use 'preservim/vim-markdown'
+  use 'godlygeek/tabular'
+  use 'epwalsh/obsidian.nvim'
+  use {
+    'antonk52/markdowny.nvim',
+    config = function()
+      require('markdowny').setup({filetypes = {'markdown', 'txt'}})
+    end
+  }
 
   -- Git stuff
   use 'tpope/vim-fugitive'
@@ -79,8 +88,8 @@ local packages_conf_files = {
   "indent-blankline.lua",
   "lspconfig.lua",
   "lualine.lua",
-  "nvim-tree.lua",
   "nvim-cmp.lua",
+  "obsidian.lua",
   "treesitter.lua",
   "vim-auto-save.lua",
   "which-key.lua",
